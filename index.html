@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KC Law Firm</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Xq1A/9avetn2ZrHz/jfnGIwChZMQNd17Q1DdR2uVSgiZBkEO8scvWwN6zBvGQJwS4RTrsX6dTTtR7J+NLyMy5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+   body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #012622;
+      color: #f7fff7;
+      background-image: url('https://icons8.com/icon/fxOQr491PrDW/scales--v2'); /* Replace with your image path */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed; /* To make the background image fixed while scrolling */
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #313638;
+      color: #f7fff7;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* Navigation Styles */
+    nav {
+      background-color: #313638;
+      padding: 10px 20px;
+    }
+
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #f7fff7; 
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #012622;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #f7fff7;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to KC Law Firm</h1>
+</header>
+
+<nav>
+
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+    <li class="social-icons"><a href="https://www.instagram.com/YourInstagramPage"><i class="fab fa-instagram"></i></a></li>
+  </ul>
+</nav>
+
+<div class="container" id="about">
+  <h2>About Us</h2>
+  <p>At KC Law Firm, we understand that legal matters can be complex and overwhelming. That's why we're here to provide you with expert legal guidance and support every step of the way. With our team of experienced attorneys, we're committed to helping you navigate through your legal challenges and achieve the best possible outcome.</p>
+</div>
+
+<div class="container" id="services">
+  <h2>Our Services</h2>
+  <p>No matter what legal issue you're facing, we're here to help. Our team offers a comprehensive range of legal services tailored to meet your individual needs. Whether you're dealing with a personal injury claim, going through a divorce, or need assistance with estate planning, we have the knowledge and expertise to guide you through the process.</p>
+</div>
+
+<div class="container" id="contact">
+  <h2>Contact Us</h2>
+  <p>Ready to take the next step? Contact us today to schedule a consultation. We'll take the time to understand your situation and provide you with personalized legal advice. Don't wait any longer to get the help you need – reach out to KC Law Firm now.</p>
+  <form id="contactForm">
+    <input type="text" id="name" name="name" placeholder="Your Name">
+    <input type="email" id="email" name="email" placeholder="Your Email">
+    <textarea id="message" name="message" rows="5" placeholder="Your Message"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<p style="text-align: center;">&copy; 2024 KC Law Firm. All rights reserved.</p>
+
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    let name = document.getElementById('name').value.trim();
+    let email = document.getElementById('email').value.trim();
+    let message = document.getElementById('message').value.trim();
+
+    if (!name || !email || !message) {
+      alert('Please fill out all fields.');
+      return;
+    }
+
+    // Form submission logic can be added here
+    console.log("Name: ", name);
+    console.log("Email: ", email);
+    console.log("Message: ", message);
+    // For demonstration purposes, let's just alert the user that the form was submitted
+    alert("Form submitted successfully!");
+  });
+</script>
+
+</body>
+</html>
